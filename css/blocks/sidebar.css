@@ -1,0 +1,9 @@
+.sidebar {
+    width: 270px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+
+}

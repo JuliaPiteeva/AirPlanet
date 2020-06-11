@@ -1,0 +1,37 @@
+.book-info {
+    min-height: 200px;
+    width: 100%;
+    background: url("../../img/pattern.png");
+    background-color: #76b46f;
+    margin-bottom: 30px;
+
+
+}
+
+.book-info--bg--blue {
+    background-color: #5972b1;
+}
+
+.book-info__text {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.site-link {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.phone-number {
+    color: inherit;
+    font-weight: 700;
+}
+
+.book-info--container {
+    padding: 30px 15px;
+    text-align: center;
+}

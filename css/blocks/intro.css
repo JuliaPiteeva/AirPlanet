@@ -1,0 +1,114 @@
+.intro-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/cover-intro.jpg") center center / cover no-repeat;
+
+
+}
+
+.intro-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: bounce .9s cubic-bezier(.08, .28, .89, .19);
+    /* animation-delay: 5s; */
+}
+
+.intro__logo {
+    margin-bottom: 30px;
+}
+
+.intro__link {
+    background: transparent;
+    color: #1c5bc4;
+    letter-spacing: 2px;
+    border: 1px solid #1c5bc3;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    padding: 15px 40px 15px 20px;
+
+}
+
+.intro__link::after {
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    background: left top / contain repeat;
+    width: 15px;
+    height: 14px;
+    background: url("../../icons/intro-sprites.png") -10px -10px;
+
+}
+
+.intro__link:hover {
+    background-color: #1c5bc3;
+    border: 1px solid #1c5bc3;
+    color: #ffffff;
+    transition: .3s;
+
+}
+
+.intro__link:focus {
+    cursor: pointer;
+}
+
+.intro__link:hover::after {
+    width: 15px;
+    height: 14px;
+    background-position: -45px -10px;
+}
+
+
+@keyframes bounce {
+    0% {
+        opacity: 0;
+        transform: translateY(0px)
+    }
+
+    25% {
+        transform: translateY(-50px);
+
+    }
+
+    40%,
+    80% {
+        transform: translateY(0px);
+    }
+
+    60% {
+        transform: translateY(-30px)
+    }
+
+    90% {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+
+}

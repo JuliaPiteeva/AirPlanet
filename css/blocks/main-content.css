@@ -1,0 +1,8 @@
+main-content {
+    width: 920px;
+    vertical-align: top;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}

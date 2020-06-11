@@ -1,0 +1,33 @@
+.bread-crumbs {
+    margin-bottom: 23px;
+}
+
+.bread-crumbs__list {}
+
+.bread-crumbs__item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bread-crumbs__item:after {
+    content: "/ ";
+    background: left center / contain no-repeat;
+}
+
+.bread-crumbs__item:last-child:after {
+    display: none;
+}
+
+.bread-crumbs__link {
+    color: #3a5bbf;
+    text-decoration: underline;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.bread-crumbs__link--active {
+    text-decoration: none;
+    color: #262424;
+}

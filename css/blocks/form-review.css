@@ -1,0 +1,145 @@
+.wrapper-form {
+    padding: 100px 80px 100px 0px;
+}
+
+.form {
+    background-color: #f4f4f4;
+    padding: 50px 98px;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    height: 57px;
+    font-size: 49px;
+    color: #262424;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form___elem-title {
+    margin-bottom: 10px;
+}
+
+.form__block {
+    flex: 1;
+    margin-left: 23px;
+    font-size: 14px;
+    color: #262424;
+    font-weight: 300;
+}
+
+.form__block:first-child {
+    margin-left: 0;
+}
+
+.form__input {
+    background-color: #ffffff;
+    border-radius: 3px;
+    width: 100%;
+    padding: 12px 9px;
+    border: 1px solid transparent;
+
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: #5972b1;
+
+
+}
+
+.form__input::placeholder {
+    font-size: 14px;
+    color: #262424;
+    font-weight: 300;
+}
+
+.form__input--textarea {
+    resize: vertical;
+    border-radius: 3px;
+    background-color: #ffffff;
+
+}
+
+.form__buttons-row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.switch-controls {
+    font-size: 14px;
+    color: #262424;
+    font-weight: 300;
+}
+
+.switch-controls__title {
+    margin-bottom: 15px;
+}
+
+.switch-controls__radio {
+    display: none;
+}
+
+
+.switch-controls__elem {
+    display: flex;
+    margin-right: 20px;
+}
+
+.switch-controls__radio:checked~.input__visible::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #5972b1;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.switch-controls__radio:checked~.input__visible {
+    background-image: linear-gradient(180deg, #ececec 0%, #ffffff 100%);
+    border: 1px solid #5972b1;
+}
+
+.switch-controls__radio:checked~.switch-controls__elem-title {
+    color: #3a5bbf;
+}
+
+.switch-controls__elem:hover .switch-controls__elem-title {
+    color: #3a5bbf;
+    transition: .3s;
+}
+
+
+.input__visible {
+    border: 1px solid #c8c8c8;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 10px;
+    background-image: linear-gradient(0deg, #ececec 0%, #ffffff 100%);
+}
+
+
+.switch-controls__buttons {
+    display: flex;
+}
+
+.form__buttons {
+    display: flex;
+    justify-content: flex-end;
+}
